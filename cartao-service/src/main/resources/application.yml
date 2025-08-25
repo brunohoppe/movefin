@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Movimentacao Financeira
+  datasource:
+    url: jdbc:postgresql://localhost:5432/movefin
+    username: hoppe
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# Porta do servidor (opcional)
+server:
+  port: 8080
